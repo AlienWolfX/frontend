@@ -227,7 +227,7 @@
                                 </thead>
                                 <tbody>
                                     <?php
-                                        require_once "includes/conn.php";
+                                        require_once "includes/conn.html";
                                         $sql ="SELECT * FROM bookings_record";
                                         $query = $conn->query($sql);
                                         while($row = $query->fetch_assoc()){
@@ -306,7 +306,7 @@
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
 
-	<?php include "includes/booking_modal.php";?>
+	<?php include "includes/booking_modal.html";?>
 	 <script>
 	$(function(){
 	  $('.edit').click(function(e){
@@ -321,7 +321,7 @@
 	function getRow(id){
 	  $.ajax({
 		type: 'POST',
-		url: 'booking_row.php',
+		url: 'booking_row.html',
 		data: {id:id},
 		dataType: 'json',
 		success: function(response){

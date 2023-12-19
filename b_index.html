@@ -75,12 +75,12 @@ function build_calendar($month, $year) {
             $calendar .= "<td class='$today'><h4>$currentDay</h4> <button class='btn btn-danger btn-xs'> <span class='glyphicon glyphicon-lock'></span> Already Booked</button>";
         } else {
             
-            $calendar .= "<td class='$today'><h4>$currentDay</h4> <a href='book.php?date=' class='btn btn-success btn-xs' data-action='confirmation'> <span class='glyphicon glyphicon-ok'></span> Book Now</a>";
+            $calendar .= "<td class='$today'><h4>$currentDay</h4> <a href='book.html?date=' class='btn btn-success btn-xs' data-action='confirmation'> <span class='glyphicon glyphicon-ok'></span> Book Now</a>";
 
         }
     
        
-        //book.php?date=" . $date . "
+        //book.html?date=" . $date . "
 
         $calendar .= "</td>";
         $currentDay++;
@@ -140,13 +140,13 @@ function build_calendar($month, $year) {
       <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="index.php #hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.php #about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.php #services">Services</a></li>
-          <li><a class="nav-link scrollto " href="index.php #portfolio">Cars</a></li>
-          <li><a class="nav-link scrollto" href="index.php #team">Founder</a></li>
-          <li><a class="nav-link scrollto" href="index.php #contact">Contact</a></li>
-          <li><a class="active" href="blog.php">Cars Detail</a></li>
+          <li><a class="nav-link scrollto" href="index.html #hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html #about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html #services">Services</a></li>
+          <li><a class="nav-link scrollto " href="index.html #portfolio">Cars</a></li>
+          <li><a class="nav-link scrollto" href="index.html #team">Founder</a></li>
+          <li><a class="nav-link scrollto" href="index.html #contact">Contact</a></li>
+          <li><a class="active" href="blog.html">Cars Detail</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -164,7 +164,7 @@ function build_calendar($month, $year) {
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <button type="button" class=" btn btn-custom text-light" ><a href="home.php?logout='1'">Sign out</a></button>
+          <button type="button" class=" btn btn-custom text-light" ><a href="home.html?logout='1'">Sign out</a></button>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -187,7 +187,7 @@ function build_calendar($month, $year) {
                         <h1> ARE YOU SURE?</h1>
                         <div class="btn-wrapper">
                         <button type="button" class="btn btn-warning btn-lg white-button" id="yesButton">
-                            <a href="book.php?$calendar" class="calendar_yes">YES</a>
+                            <a href="book.html?$calendar" class="calendar_yes">YES</a>
                         </button>          
                             <button type="button" class="btn btn-warning text-light btn-lg white-button">
                                 <a href="#" class="calendar_no ">NO</a>
