@@ -1,3 +1,6 @@
+import { backendURL, setRouter } from "../utils/utils.js";
+setRouter();
+
 var adminToken = localStorage.getItem("admin_token");
 
 if (!adminToken) {
@@ -5,7 +8,7 @@ if (!adminToken) {
 }
 
 function fetchData() {
-  return fetch("http://alluc.test/api/clients", {
+  return fetch(backendURL + "/api/clients", {
     headers: {
       Authorization: "Bearer " + adminToken,
       "Content-Type": "application/json",
@@ -46,7 +49,6 @@ function updateTable(data) {
       "</td>" +
       "<td>" +
       '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editModal">Edit</button>' +
-      '<button type="button" class="btn btn-success" data-toggle="modal" data-target="#viewModal">View</button>' +
       '<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete</button>' +
       "</td>" +
       "</tr>";
