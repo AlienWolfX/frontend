@@ -6,9 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Online Booking System</title>
-
+    <title>Alluc</title>
     <!-- Bootstrap -->
     <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
     <link
@@ -23,7 +21,6 @@
     <!-- iCheck -->
     <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet" />
     <!-- Datatables -->
-
     <link
       href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css"
       rel="stylesheet" />
@@ -39,7 +36,6 @@
     <link
       href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css"
       rel="stylesheet" />
-
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet" />
   </head>
@@ -51,12 +47,10 @@
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0">
               <a href="index.html" class="site_title"
-                ><i class="fa fa-paw"></i> <span>Online Booking</span></a
+                ><i class="fa fa-paw"></i> <span>Alluc</span></a
               >
             </div>
-
             <div class="clearfix"></div>
-
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
@@ -71,93 +65,14 @@
               </div>
             </div>
             <!-- /menu profile quick info -->
-
             <br />
-
             <!-- sidebar menu -->
             <div
               id="sidebar-menu"
               class="main_menu_side hidden-print main_menu">
-              <div class="menu_section">
-                <h3>Dashboard</h3>
-                <ul class="nav side-menu">
-                  <li>
-                    <a
-                      ><i class="fa fa-home"></i> Home
-                      <span class="fa fa-chevron-down"></span
-                    ></a>
-                    <ul class="nav child_menu">
-                      <li><a href="#">Dashboard</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a
-                      ><i class="fa fa-edit"></i> Customer
-                      <span class="fa fa-chevron-down"></span
-                    ></a>
-                    <ul class="nav child_menu">
-                      <li><a href="#">All Customer</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a
-                      ><i class="fa fa-desktop"></i> Booking
-                      <span class="fa fa-chevron-down"></span
-                    ></a>
-                    <ul class="nav child_menu">
-                      <li><a href="#">All Booked</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="menu_section">
-                <h3>Reports</h3>
-                <ul class="nav side-menu">
-                  <li>
-                    <a
-                      ><i class="fa fa-book"></i> Booking
-                      <span class="fa fa-chevron-down"></span
-                    ></a>
-                    <ul class="nav child_menu">
-                      <li><a href="#">Approved</a></li>
-                      <li><a href="#">Cancelled</a></li>
-                      <li><a href="#">Disapproved</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a
-                      ><i class="fa fa-sitemap"></i> Member
-                      <span class="fa fa-chevron-down"></span
-                    ></a>
-                    <ul class="nav child_menu">
-                      <li><a href="#">All Members</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a
-                      ><i class="fa fa-cogs"></i> Settings<span
-                        class="fa fa-chevron-down"></span
-                    ></a>
-                    <ul class="nav child_menu">
-                      <li><a href="#level1_1">Level One</a></li>
-                      <li>
-                        <a>Level One<span class="fa fa-chevron-down"></span></a>
-                        <ul class="nav child_menu">
-                          <li class="sub_menu">
-                            <a href="level2.html">Level Two</a>
-                          </li>
-                          <li><a href="#level2_1">Level Two</a></li>
-                          <li><a href="#level2_2">Level Two</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#level1_2">Level One</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+              <div class="menu_section"></div>
             </div>
             <!-- /sidebar menu -->
-
             <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
               <a data-toggle="tooltip" data-placement="top" title="Settings">
@@ -185,7 +100,6 @@
             <!-- /menu footer buttons -->
           </div>
         </div>
-
         <!-- top navigation -->
         <div class="top_nav">
           <div class="nav_menu">
@@ -224,7 +138,6 @@
           </div>
         </div>
         <!-- /top navigation -->
-
         <!-- page content -->
         <div class="right_col" role="main">
           <div class="">
@@ -232,9 +145,9 @@
               <div class="title_left">
                 <h3>LIST OF RECORDS</h3>
               </div>
-
               <div class="title_right">
-                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                <div
+                  class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
                   <div class="input-group">
                     <input
                       type="text"
@@ -251,63 +164,298 @@
                     </span>
                   </div>
                 </div>
-            </div>
-
-            <div class="clearfix"></div>
-            <div class="row">
-              <div class="col-md-12 col-sm-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>List of Clients</h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li>
-                        <a class="collapse-link"
-                          ><i class="fa fa-chevron-up"></i
-                        ></a>
-                      </li>
-                      <li class="dropdown">
-                        <a
-                          href="#"
-                          class="dropdown-toggle"
-                          data-toggle="dropdown"
-                          role="button"
-                          aria-expanded="false"
-                          ><i class="fa fa-wrench"></i
-                        ></a>
+              </div>
+              <div class="clearfix"></div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>List of Clients</h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-toggle="modal"
+                            data-target="#createClientModal">
+                            Create Client
+                          </button>
+                        </li>
+                        <!-- Modal -->
                         <div
-                          class="dropdown-menu"
-                          aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Settings 1</a>
-                          <a class="dropdown-item" href="#">Settings 2</a>
+                          class="modal fade"
+                          id="createClientModal"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-labelledby="createClientModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5
+                                  class="modal-title"
+                                  id="createClientModalLabel">
+                                  Create Client
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="close"
+                                  data-dismiss="modal"
+                                  aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <form id="createClientForm">
+                                <div class="modal-body">
+                                  <div class="form-group">
+                                    <label for="clientFirstName"
+                                      >First Name</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="clientFirstName" />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="clientLastName"
+                                      >Last Name</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="clientLastName" />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="age">Age</label>
+                                    <input
+                                      type="number"
+                                      class="form-control"
+                                      id="clientAge" />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input
+                                      type="email"
+                                      class="form-control"
+                                      id="clientEmail" />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input
+                                      type="password"
+                                      class="form-control"
+                                      id="clientPassword" />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contactNumber"
+                                      >Contact Number</label
+                                    >
+                                    <input
+                                      type="tel"
+                                      class="form-control"
+                                      id="clientNumber" />
+                                  </div>
+                                </div>
+                              </form>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-dismiss="modal">
+                                  Close
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary"
+                                  id="create_client">
+                                  Save changes
+                                </button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </li>
-                      <li>
-                        <a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
+                        <li>
+                          <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="card-box table-responsive">
+                            <table
+                              id="datatable-responsive"
+                              class="table table-bordered table-striped dt-responsive nowrap"
+                              cellspacing="0"
+                              width="100%">
+                              <thead>
+                                <tr>
+                                  <th>FIRST NAME</th>
+                                  <th>LAST NAME</th>
+                                  <th>AGE</th>
+                                  <th>EMAIL</th>
+                                  <th>CONTACT NUMBER</th>
+                                  <th>ACTIONS</th>
+                                </tr>
+                              </thead>
+                              <tbody id="clientTableBody"></tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="x_content">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="card-box table-responsive">
-                          <table
-                            id="datatable-responsive"
-                            class="table table-bordered table-striped dt-responsive nowrap"
-                            cellspacing="0"
-                            width="100%">
-                            <thead>
-                              <tr>
-                                <th>FIRST NAME</th>
-                                <th>LAST NAME</th>
-                                <th>AGE</th>
-                                <th>EMAIL</th>
-                                <th>CONTACT NUMBER</th>
-                                <th>ACTIONS</th>
-                              </tr>
-                            </thead>
-                            <tbody id="clientTableBody"></tbody>
-                          </table>
+                </div>
+              </div>
+              <!-- Create Modal -->
+              <div
+                class="modal fade"
+                id="createModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="createModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="createModalLabel">
+                        Create Staff
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div
+                      id="successAlert"
+                      class="alert alert-success d-none"
+                      role="alert"></div>
+                    <div
+                      id="errorAlert"
+                      class="alert alert-danger d-none"
+                      role="alert"></div>
+                    <form>
+                      <div class="modal-body">
+                        <!-- Add your form for creating here -->
+                        <div class="form-group">
+                          <label for="firstName">First Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="firstName" />
+                        </div>
+                        <div class="form-group">
+                          <label for="lastName">Last Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="lastName" />
+                        </div>
+                        <div class="form-group">
+                          <label for="age">Age</label>
+                          <input type="number" class="form-control" id="age" />
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" id="email" />
+                        </div>
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="password" />
+                        </div>
+                        <div class="form-group">
+                          <label for="contactNumber">Contact Number</label>
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="contactNumber" />
+                        </div>
+                        <div class="form-group">
+                          <label for="image">Profile</label>
+                          <input
+                            type="file"
+                            class="form-control"
+                            id="image"
+                            accept="image/*" />
+                        </div>
+                      </div>
+                    </form>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal">
+                        Close
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="create_staff">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>List of Staff</h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                          <button
+                            class="btn btn-primary"
+                            data-toggle="modal"
+                            data-target="#createModal">
+                            Create Staff
+                          </button>
+                        </li>
+                        <li>
+                          <a class="collapse-link"
+                            ><i class="fa fa-chevron-up"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="card-box table-responsive">
+                            <table
+                              id="datatable-responsive"
+                              class="table table-bordered table-striped dt-responsive nowrap"
+                              cellspacing="0"
+                              width="100%">
+                              <thead>
+                                <tr>
+                                  <th>FIRST NAME</th>
+                                  <th>LAST NAME</th>
+                                  <th>AGE</th>
+                                  <th>EMAIL</th>
+                                  <th>CONTACT NUMBER</th>
+                                  <th>ACTIONS</th>
+                                </tr>
+                              </thead>
+                              <tbody id="staffTableBody"></tbody>
+                            </table>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -316,19 +464,16 @@
               </div>
             </div>
           </div>
+          <!-- /page content -->
+          <!-- footer content -->
+          <footer>
+            <div class="clearfix"></div>
+          </footer>
+          <!-- /footer content -->
         </div>
-        <!-- /page content -->
-
-        <!-- footer content -->
-        <footer>
-          <div class="pull-right">2023</div>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
       </div>
+      <!-- jQuery -->
     </div>
-
-    <!-- jQuery -->
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -354,10 +499,70 @@
     <script src="../vendors/jszip/dist/jszip.min.js"></script>
     <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
     <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
-
     <!-- Custom Theme Scripts -->
+    <script>
+      var backendURL = "http://alluc.test";
+
+      // Delete Client
+      function deleteClient(clientId) {
+        var adminToken = localStorage.getItem("admin_token");
+        fetch(`${backendURL}/api/clients/${clientId}`, {
+          method: "DELETE",
+          headers: {
+            Authorization: "Bearer " + adminToken,
+          },
+        })
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+          })
+          .then((data) => {
+            location.reload();
+          })
+          .catch((error) => {
+            var errorAlert = document.getElementById("errorAlert");
+            errorAlert.textContent = "Error deleting: " + error.message;
+            errorAlert.classList.remove("d-none");
+          });
+      }
+
+      // Delete Staff
+      function deleteStaff(staffId) {
+        var adminToken = localStorage.getItem("admin_token");
+        fetch(`${backendURL}/api/staff/${staffId}`, {
+          method: "DELETE",
+          headers: {
+            Authorization: "Bearer " + adminToken,
+          },
+        })
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+          })
+          .then((data) => {
+            location.reload();
+          })
+          .catch((error) => {
+            var errorAlert = document.getElementById("errorAlert");
+            errorAlert.textContent = "Error deleting: " + error.message;
+            errorAlert.classList.remove("d-none");
+          });
+      }
+    </script>
     <script src="../build/js/custom.min.js"></script>
     <script type="module" src="../admin/js/dashboard/dashboard.js"></script>
-    <script type="module" src="../admin/js/dashboard/CRUD_U.js"></script>
+    <script defer type="module" src="../admin/js/dashboard/CRUD_U.js"></script>
+    <script
+      defer
+      type="module"
+      src="../admin/js/dashboard/create_client.js"></script>
+    <script
+      defer
+      type="module"
+      src="../admin/js/dashboard/create_staff.js"></script>
   </body>
 </html>

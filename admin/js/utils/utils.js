@@ -10,7 +10,6 @@ function showAlert(type, message) {
     alertDiv.classList.remove("d-none");
     alertDiv.textContent = message;
 
-    // Hide the alert after 3 seconds
     setTimeout(() => {
       alertDiv.classList.add("d-none");
     }, 3000);
