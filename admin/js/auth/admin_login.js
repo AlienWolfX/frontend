@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("admin_token", responseJson.admin_token);
             event.target.reset();
             setTimeout(function () {
-              window.location.href = "index.html";
+              window.location.href = "/admin/index.html";
             }, 2000); // Delay of 2 seconds
           } else {
             showAlert("danger", "You are not an admin");
