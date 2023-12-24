@@ -2,7 +2,7 @@ import { setRouter } from "../router/router.js";
 
 setRouter();
 
-const backendURL = "https://0b9d-103-170-129-6.ngrok-free.app/";
+const backendURL = "https://c6a3-103-170-129-6.ngrok-free.app";
 
 function showAlert(type, message) {
   const alertDiv = document.querySelector(`.alert.alert-${type}`);
