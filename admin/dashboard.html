@@ -70,7 +70,20 @@
             <div
               id="sidebar-menu"
               class="main_menu_side hidden-print main_menu">
-              <div class="menu_section"></div>
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li>
+                    <a
+                      ><i class="fa fa-home"></i> Home
+                      <span class="fa fa-chevron-down"></span
+                    ></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index.html">Dashboard</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
             <!-- /sidebar menu -->
             <!-- /menu footer buttons -->
@@ -309,6 +322,105 @@
                           </div>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Edit Modal -->
+              <div
+                class="modal fade"
+                id="editModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="editModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="editModalLabel">
+                        Edit Client
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <form
+                      id="editClientForm"
+                      onsubmit="return handleEditFormSubmit()">
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label for="editClientFirstName">First Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="editClientFirstName" />
+                        </div>
+                        <div class="form-group">
+                          <label for="editClientLastName">Last Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="editClientLastName" />
+                        </div>
+                        <div class="form-group">
+                          <label for="editClientAge">Age</label>
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="editClientAge" />
+                        </div>
+                        <div class="form-group">
+                          <label for="editClientEmail">Email</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="editClientEmail" />
+                        </div>
+                        <div class="form-group">
+                          <label for="editClientPassword">Password</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="editClientPassword" />
+                        </div>
+                        <div class="form-group">
+                          <label for="editClientContactNumber"
+                            >Contact Number</label
+                          >
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="editClientContactNumber" />
+                        </div>
+                        <div class="form-group">
+                          <label for="editClientProfilePicture"
+                            >Profile Picture</label
+                          >
+                          <input
+                            type="file"
+                            class="form-control"
+                            id="editClientProfilePicture"
+                            accept="image/*" />
+                        </div>
+                      </div>
+                    </form>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal">
+                        Close
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="saveChangesButton">
+                        Save changes
+                      </button>
                     </div>
                   </div>
                 </div>
